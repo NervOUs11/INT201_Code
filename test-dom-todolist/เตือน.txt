@@ -1,0 +1,2 @@
+ถ้ามีปัญหา "type": "module" ในpackage.json 
+ใช้ textContent แทน innerText
