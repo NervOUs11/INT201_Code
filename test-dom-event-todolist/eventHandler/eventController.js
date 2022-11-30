@@ -63,7 +63,7 @@ const setdoneStyle = (doneButtonFire) => {
   doneButtonFire.style = 'background-color: green;color: white'
 }
 
-const removeButtonHandler = () => {
+const removeButtonHandler = (event) => {
   const removeButtonFire = event.target
   const removeId = removeButtonFire.parentElement.getAttribute('id')
   removeTodoItem(removeId)
