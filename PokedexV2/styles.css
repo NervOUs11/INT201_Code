@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.title{
+    font-size: 42px;
+    color: red;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 450px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.card p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgrey;
+}
+.btn{
+    padding-top: 20px;
+}
+
+.btn button{
+    margin: 10px;
+}
+
+.prev_btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: orange;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.prev_btn:hover{
+    transform: translateY(1px);
+}
+
+.next_btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: deepskyblue;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.next_btn:hover{
+    transform: translateY(1px);
+}
+
