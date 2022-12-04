@@ -32,7 +32,7 @@ function todoUserInterface() {
     const notdone = document.getElementById('notDone')
     // notdone.innerText = `Number of Not Done:${numberOfNotDone}`
     notdone.textContent = `Number of Not Done:${numberOfNotDone}`
-    div.appendChild(done)
+    div.appendChild(notdone)
   }
   function removeTodoItem(removeId) {
     const removeTodoNode = document.getElementById(removeId)
