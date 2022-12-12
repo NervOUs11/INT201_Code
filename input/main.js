@@ -12,3 +12,7 @@ msg.addEventListener('keypress', (event)=>{
           display.textContent = msg.value
      }
 })
+
+const H1 = document.createElement('h1')
+H1.textContent = 'This is h1'
+document.body.appendChild(H1)
