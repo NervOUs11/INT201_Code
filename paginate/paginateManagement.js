@@ -41,7 +41,9 @@ function paginateManagement(items, rows) {
   }
   const showPageNumbers = () => {
     const totalpage = getTotalPages(products, rowsPerPage)
-    const pagination = document.querySelector('.pagination')
+    //const pagination = document.querySelector('.pagination')
+    const app = document.querySelector('#app')
+    const pagination = app.querySelector('div.pagination')
 
     for (let page = 1; page <= totalpage; page++) {
       const btn = document.createElement('button')
