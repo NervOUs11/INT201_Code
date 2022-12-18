@@ -10,8 +10,6 @@ function paginateManagement(items, rows) {
   const rowsPerPage = rows
   const products = items
 
-  
-
   const showItemsOfCurrentPage = (currentPageNumber) => {
       const itemOfCurrentPage = getItemsOfCurrentPage(products, currentPageNumber, rowsPerPage)
       const productsUI = document.getElementById('products')
@@ -33,7 +31,7 @@ function paginateManagement(items, rows) {
 
     //calculating current page
     const currentPage = event?.target.id ?? 1
-    showItemsOfCurrentPage(currentPage, rowsPerPage)
+    showItemsOfCurrentPage(currentPage)
 
     //add button click style to a current page
     const targetPageButton = document.getElementById(currentPage)
@@ -41,10 +39,10 @@ function paginateManagement(items, rows) {
   }
   const showPageNumbers = () => {
     const totalpage = getTotalPages(products, rowsPerPage)
-    //const pagination = document.querySelector('.pagination')
-    const app = document.querySelector('#app')
-    const pagination = app.querySelector('div.pagination')
-
+    const pagination = document.querySelector('.pagination')
+    // const app = document.querySelector('#app')
+    // const pagination = app.querySelector('div.pagination')
+    
     for (let page = 1; page <= totalpage; page++) {
       const btn = document.createElement('button')
       btn.textContent = page
