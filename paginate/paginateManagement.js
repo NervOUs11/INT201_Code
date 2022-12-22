@@ -24,6 +24,9 @@ function paginateManagement(items, rows) {
     // clean button click styles
     const pagesStyle = document.querySelectorAll('button')
     pagesStyle.forEach((page) => (page.style = 'border: 1px solid #999'))
+    // for (let index = 0; index < pagesStyle.length; index++) {
+    //   pagesStyle[index].style = 'border: 1px solid #999'
+    // }
 
     //clean previous page's items
     const productsUl = document.getElementById('products')
